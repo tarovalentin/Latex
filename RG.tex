@@ -1,11 +1,29 @@
 \documentclass[a4,10pt,titlepage]{article}
 \usepackage{taro}
 \begin{document}
-	\title{\textbf{Notes on Bachelor project}}
-	\author{Svend Krøjer Møller and Taro Valentin Brown}
+	\title{\textbf{Notes concerning article}}
+	\author{Taro Valentin Brown}
 	\maketitle
-	\tableofcontents
-	\newpage
-	\section{Equations of motion from Lagrangian}
-	\subsection{Klein Gordon Eq}
+	\section{Role of $\gamma$ and $y$}
+	\subsection{Introduction}
+$\mu$ is the renormalization scale,
+\be \label{eq:barem}
+m_0\lp(\lambda \rp)\equiv m_r \lp(\lambda \rp) Z_m(\epsilon,g_r)
+\ee
+
+RG equations
+\be \label{eq:gammam}
+- \gamma_m\equiv \pdv{\log m_r \lp(\lambda \rp)}{\log \mu}=-\pdv{\log Z_m}{\log \mu}=\pdv{\log Z_m}{\log \mu_0}
+\ee
+\[
+m_0(\lambda)=\lambda m_0,\:\:\:\mu_0(\lambda)=\lambda \mu_0
+\]
+We want to find how $m_r(\lambda)$ transforms. Differentiating equation \ref{eq:barem}
+\[
+\pdv{m_0\lp(\lambda \rp)}{\log \lambda}=\pdv{}{\log \lambda}\lp(m_r\lp(\lambda \rp) Z_m\rp)=Z_m\pdv{m_r \lp(\lambda \rp)}{\log \lambda}+m_r\lp(\lambda \rp)\pdv{Z_m}{\log \lambda}
+\]
+\begin{align*}
+\frac{1}{Z_m}\pdv{m_0\lp(\lambda \rp)}{\log \lambda}&=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}+\frac{m_r\lp(\lambda \rp)}{Z_m}\pdv{Z_m}{\mu_0}\pdv{\mu_0}{\log \lambda}\\
+&=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}+\frac{m_r\lp(\lambda \rp)}{Z_m}\pdv{Z_m}{\mu_0}\pdv{\mu_0}{\lambda}\pdv{\lambda}{\log \lambda}
+\end{align*}
 \end{document}
