@@ -6,43 +6,55 @@
 	\maketitle
 	\section{Role of $\gamma$}
 	\subsection{Introduction}
-$\mu$ is the renormalization scale,
+In the article the chiral mass $\chi$ transformed as $\chi\ra \lambda^y \chi$. The exponent $y$ is related to the mass anomalous dimension $\gamma_m$ which we will show here. 
+
+We will work with the renormalized and bare mass $m_r$ and $m_0$. the renormalization scale is $\mu$. The renormalized mass is defined through
 \be \label{eq:barem}
 m_0\lp(\lambda \rp)\equiv m_r \lp(\lambda \rp) Z_m(\epsilon,g_r)
 \ee
-
-RG equations
+The mass anamolous dimension $\gamma_m$ is defined by
 \be \label{eq:gammam}
 - \gamma_m\equiv \pdv{\log m_r \lp(\lambda \rp)}{\log \mu}=-\pdv{\log Z_m}{\log \mu}=\pdv{\log Z_m}{\log \mu_0}
 \ee
+where $Z_m=Z_m(\frac{\mu}{\mu_0})$. The bare mass and renormalization scale are 
 \[
 m_0(\lambda)=\lambda m_0,\:\:\:\mu_0(\lambda)=\lambda \mu_0
 \]
-We want to find how $m_r(\lambda)$ transforms. Differentiating equation \ref{eq:barem}
+We then want to find how $m_r(\lambda)$ transforms. Differentiating equation \ref{eq:barem} wrt $\log \lambda$ gives
 \[
 \pdv{m_0\lp(\lambda \rp)}{\log \lambda}=\pdv{}{\log \lambda}\lp(m_r\lp(\lambda \rp) Z_m\rp)=Z_m\pdv{m_r \lp(\lambda \rp)}{\log \lambda}+m_r\lp(\lambda \rp)\pdv{Z_m}{\log \lambda}
 \]
-\[
+Dividing through by $Z_m$ we get
+\be \label{eq:someeq}
 \frac{1}{Z_m}\pdv{m_0\lp(\lambda \rp)}{\log \lambda}=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}+\frac{m_r\lp(\lambda \rp)}{Z_m}\pdv{Z_m}{\mu_0}\pdv{\mu_0}{\log \lambda}
-\]
-
+\ee
+Now both the $m$ and $\mu_0$ derivatives go as:
 \[
 \pdv{m_0(\lambda)}{\log\lambda}=\pdv{m_0(\lambda)}{\lambda}\lp(\pdv{\log \lambda}{\lambda} \rp)^{-1}=m_0\lambda=m_0(\lambda)
 \]
-
-\[
+Using this on both sides of \ref{eq:someeq} we are left with
+\be \label{eq:nextstep}
 \frac{m_0(\lambda)}{Z_m}=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}+\frac{m_r\lp(\lambda \rp)}{Z_m}\pdv{Z_m}{\mu_0}\mu_0(\lambda)
-\]
+\ee
+We want something of the form in \ref{eq:gammam}, so the $Z$ derivative is rewritten to include logarithms: 
 \[
 \pdv{Z_m}{\mu_0}=\pdv{\log Z_m}{\log \mu_0}\pdv{\log \mu_0}{\mu_0}\lp(\pdv{\log Z_m}{Z_m}\rp)^{-1}=-\gamma_m \frac{Z_m}{\mu_0}
 \]
+By plugging this into \ref {eq:nextstep} and using the relation between the renormalized and bare masses we get the differentialequation
 \[
 \frac{m_0(\lambda)}{Z_m}=m_r(\lambda)=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}-\gamma_m m_r(\lambda)
 \]
+Which can be rewritten in the simpler form:
 \be
 \pdv{m_r(\lambda)}{\log \lambda}=\lp( 1+\gamma_m \rp)m_r(\lambda)
 \ee
+Solving this is done by rewriting the logarithmic derivative
 \be
 \pdv{m_r(\lambda)}{\lambda}=\frac{\lp( 1+\gamma_m \rp)}{\lambda}m_r(\lambda)\Rightarrow m_r( \lambda)=\lambda^{1+\gamma_m}m_r
 \ee
+which means that the the renormalized mass transforms as
+\be
+m_r\ra\lambda^{1+\gamma_m}m_r
+\ee
+
 \end{document}

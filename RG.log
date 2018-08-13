@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  13 AUG 2018 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.3)  13 AUG 2018 12:18
 entering extended mode
 **./RG.tex
 (RG.tex
@@ -2449,10 +2449,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 9.
  [1] (RG.aux) ) 
 Here is how much of TeX's memory you used:
- 34508 strings out of 493303
- 807172 string characters out of 3138854
- 944072 words of memory out of 3000000
- 37468 multiletter control sequences out of 15000+200000
+ 34510 strings out of 493303
+ 807196 string characters out of 3138854
+ 946092 words of memory out of 3000000
+ 37470 multiletter control sequences out of 15000+200000
  590839 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,6n,138p,10417b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2466,11 +2466,12 @@ fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
-Output written on RG.pdf (2 pages, 128250 bytes).
+1/public/lm/lmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb>
+Output written on RG.pdf (2 pages, 148223 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
