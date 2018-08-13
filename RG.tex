@@ -30,4 +30,19 @@ We want to find how $m_r(\lambda)$ transforms. Differentiating equation \ref{eq:
 \pdv{m_0(\lambda)}{\log\lambda}=\pdv{m_0(\lambda)}{\lambda}\lp(\pdv{\log \lambda}{\lambda} \rp)^{-1}=m_0\lambda=m_0(\lambda)
 \]
 
+\[
+\frac{m_0(\lambda)}{Z_m}=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}+\frac{m_r\lp(\lambda \rp)}{Z_m}\pdv{Z_m}{\mu_0}\mu_0(\lambda)
+\]
+\[
+\pdv{Z_m}{\mu_0}=\pdv{\log Z_m}{\log \mu_0}\pdv{\log \mu_0}{\mu_0}\lp(\pdv{\log Z_m}{Z_m}\rp)^{-1}=-\gamma_m \frac{Z_m}{\mu_0}
+\]
+\[
+\frac{m_0(\lambda)}{Z_m}=m_r(\lambda)=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}-\gamma_m m_r(\lambda)
+\]
+\be
+\pdv{m_r(\lambda)}{\log \lambda}=\lp( 1+\gamma_m \rp)m_r(\lambda)
+\ee
+\be
+\pdv{m_r(\lambda)}{\lambda}=\frac{\lp( 1+\gamma_m \rp)}{\lambda}m_r(\lambda)\Rightarrow m_r( \lambda)=\lambda^{1+\gamma_m}m_r
+\ee
 \end{document}
