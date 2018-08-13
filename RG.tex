@@ -5,7 +5,7 @@
 	\author{Taro Valentin Brown}
 	\maketitle
 	\section{Role of $\gamma$}
-	\subsection{Introduction}
+	\subsection{Long version}
 In the article the chiral mass $\chi$ transformed as $\chi\ra \lambda^y \chi$. The exponent $y$ is related to the mass anomalous dimension $\gamma_m$ which we will show here. 
 
 We will work with the renormalized and bare mass $m_r$ and $m_0$. the renormalization scale is $\mu$. The renormalized mass is defined through
@@ -28,7 +28,7 @@ Dividing through by $Z_m$ we get
 \be \label{eq:someeq}
 \frac{1}{Z_m}\pdv{m_0\lp(\lambda \rp)}{\log \lambda}=\pdv{m_r\lp(\lambda \rp)}{\log \lambda}+\frac{m_r\lp(\lambda \rp)}{Z_m}\pdv{Z_m}{\mu_0}\pdv{\mu_0}{\log \lambda}
 \ee
-Now both the $m$ and $\mu_0$ derivatives go as:
+Both the $m$ and $\mu_0$ logarithmic derivatives go as:
 \[
 \pdv{m_0(\lambda)}{\log\lambda}=\pdv{m_0(\lambda)}{\lambda}\lp(\pdv{\log \lambda}{\lambda} \rp)^{-1}=m_0\lambda=m_0(\lambda)
 \]
@@ -56,5 +56,27 @@ which means that the the renormalized mass transforms as
 \be
 m_r\ra\lambda^{1+\gamma_m}m_r
 \ee
+\subsection{Short version}
+By using a renormalization scale of $\mu$ and the usual way of defining a renormalized mass $m_r=\frac{1}{Z_m}m_0$ we define the mass anomalous dimension by
+\be
+\gamma_m\equiv \pdv{\log m_r}{\mu}
+\ee
+If the  bare mass transforms like its canonical dimension according to
+\[
+m\ra \lambda  m
+\]
+this leads to the renormalized mass transforming as
+\[
+m_r\ra \lambda^{1+\gamma_m} m_r
+\]
+since it also tranforms as 
+\[
+m_r\ra \lambda^{4-y}m_r
+\]
+$\gamma_m$ is related to $y$ by
+\be
+y=3-\gamma_m
+\ee
 
 \end{document}
+
